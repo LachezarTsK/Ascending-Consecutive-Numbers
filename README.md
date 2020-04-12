@@ -8,9 +8,8 @@ Checks whether the input string consists entirely of ascending consecutive non-n
 That is to say, there must be at least two such integers so that the algorithm returns 'true'. 
 Otherwise, it returns false, including for an input of a single digit.
 
-The minimum input value: 0
-
-The maximum input: maximum value of BigInteger, i.e. 
+Minimum input value: 0
+Maximum input: maximum value of BigInteger, i.e. 
 [(2 to the power of Integer.MAX_VALUE) - 1].
 
 The conditions of the challenge requre only to return 'true' or 'false' but for demonstration purposes, 
