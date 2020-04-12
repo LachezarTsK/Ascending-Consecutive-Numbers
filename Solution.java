@@ -13,7 +13,7 @@ public class Solution {
     String integer_asString = scanner.next();
     scanner.close();
 
-    boolean result = input_isAscendingConsecutive_positiveIntegers(integer_asString);
+    boolean result = input_isAscendingConsecutive__positiveIntegers(integer_asString);
     if (result) {
       System.out.println(result);
       System.out.println(storeSeries);
