@@ -4,7 +4,7 @@
 Challenge at edabit.com. Tags: Algorithms, Math, Numbers, BigInteger, String
 
 
-Checks whether the input string consists entirely of ascending consecutive positive integers, leading zero not counted.
+Checks whether the input string consists entirely of ascending consecutive positive integers, leading zeros not counted.
 That is to say, there must be at least two such integers so that the algorithm returns 'true'. 
 Otherwise, it returns false, including for an input of a single digit.
 
