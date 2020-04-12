@@ -30,11 +30,11 @@ public class Solution {
   public static boolean input_isAscendingConsecutive__positiveIntegers(String str) {
 
     int length = str.length();
-    if (length == 1) {
+    BigInteger num = new BigInteger(str);
+    if (num.toString().length() == 1) {
       return false;
     }
 
-    BigInteger num = new BigInteger(str);
     boolean hasSeries = false;
     int exponent = length / 2 + 2;
 
