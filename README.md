@@ -13,5 +13,5 @@ Minimum input value: 0
 Maximum input value: maximum value of BigInteger, i.e. 
 [(2 to the power of Integer.MAX_VALUE) - 1].
 
-The conditions of the challenge requre only to return 'true' or 'false' but for demonstration purposes, 
+The conditions of the challenge requre to return only 'true' or 'false' but for demonstration purposes, 
 if the answer is 'true', my algorithm prints also the whole series of ascending consecutive non-negative numbers.
