@@ -9,6 +9,7 @@ That is to say, there must be at least two such integers so that the algorithm r
 Otherwise, it returns false, including for an input of a single digit.
 
 Minimum input value: 0
+
 Maximum input: maximum value of BigInteger, i.e. 
 [(2 to the power of Integer.MAX_VALUE) - 1].
 
