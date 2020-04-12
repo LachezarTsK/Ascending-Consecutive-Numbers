@@ -49,7 +49,7 @@ public class Solution {
 
   /**
    * Checks, for the value of current modulo, whether the input integer consists entirely of
-   * ascending consecutive non-negative numbers.
+   * ascending consecutive non-negative integers.
    */
   private static boolean isSeries_of_ascendingConsecutive_nonNegativeNumbers(BigInteger num, BigInteger modulo) {
 
