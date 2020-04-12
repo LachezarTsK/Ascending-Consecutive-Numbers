@@ -23,8 +23,7 @@ public class Solution {
   }
 
   /**
-   * Checks whether the input integer consists entirely of ascending consecutive non-negative
-   * integers.
+   * Checks whether the input integer consists entirely of ascending consecutive non-negative integers.
    *
    * @return 'true' if such series is found. Otherwsie 'false'.
    */
@@ -52,8 +51,7 @@ public class Solution {
    * Checks, for the value of current modulo, whether the input integer consists entirely of
    * ascending consecutive non-negative numbers.
    */
-  private static boolean isSeries_of_ascendingConsecutive_nonNegativeNumbers(
-      BigInteger num, BigInteger modulo) {
+  private static boolean isSeries_of_ascendingConsecutive_nonNegativeNumbers(BigInteger num, BigInteger modulo) {
 
     BigInteger larger = num.mod(modulo);
     BigInteger previousNum = num;
@@ -87,8 +85,7 @@ public class Solution {
     return true;
   }
 
-  private static boolean previous_and_current_numbers_areConsecutive(
-      BigInteger smaller, BigInteger larger) {
+  private static boolean previous_and_current_numbers_areConsecutive(BigInteger smaller, BigInteger larger) {
     return smaller.add(BigInteger.ONE).equals(larger);
   }
 
@@ -97,8 +94,7 @@ public class Solution {
    * consitute the number change, such as (99, 100), (999, 1000), etc. then adjust the value of
    * modulo for a transition from the higher to the lower value.
    */
-  private static BigInteger check_andIfNeedBe_changeModulo_forNumbersWithLessDigits(
-      BigInteger previousNum, BigInteger modulo) {
+  private static BigInteger check_andIfNeedBe_changeModulo_forNumbersWithLessDigits(BigInteger previousNum, BigInteger modulo) {
     if (BigInteger.valueOf((long) 10).multiply(previousNum.mod(modulo)).equals(modulo)) {
       modulo = modulo.divide(BigInteger.valueOf((long) 10));
     }
