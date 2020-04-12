@@ -13,7 +13,7 @@ public class Solution {
     String integer_asString = scanner.next();
     scanner.close();
 
-    boolean result = input_isAscendingConsecutive_nonNegativeNumbers(integer_asString);
+    boolean result = input_isAscendingConsecutive_positiveIntegers(integer_asString);
     if (result) {
       System.out.println(result);
       System.out.println(storeSeries);
@@ -23,11 +23,11 @@ public class Solution {
   }
 
   /**
-   * Checks whether the input integer consists entirely of ascending consecutive non-negative integers.
+   * Checks whether the input integer consists entirely of ascending consecutive positive integers.
    *
    * @return 'true' if such series is found. Otherwsie 'false'.
    */
-  public static boolean input_isAscendingConsecutive_nonNegativeNumbers(String str) {
+  public static boolean input_isAscendingConsecutive__positiveIntegers(String str) {
 
     int length = str.length();
     if (length == 1) {
@@ -40,7 +40,7 @@ public class Solution {
 
     while (hasSeries == false && exponent >= 1) {
       BigInteger modulo = BigInteger.valueOf((long) 10).pow(exponent);
-      hasSeries = isSeries_of_ascendingConsecutive_nonNegativeNumbers(num, modulo);
+      hasSeries = isSeries_of_ascendingConsecutive_positiveIntegers(num, modulo);
       exponent--;
     }
 
@@ -49,9 +49,9 @@ public class Solution {
 
   /**
    * Checks, for the value of current modulo, whether the input integer consists entirely of
-   * ascending consecutive non-negative integers.
+   * ascending consecutive positive integers.
    */
-  private static boolean isSeries_of_ascendingConsecutive_nonNegativeNumbers(BigInteger num, BigInteger modulo) {
+  private static boolean isSeries_of_ascendingConsecutive_positiveIntegers(BigInteger num, BigInteger modulo) {
 
     BigInteger larger = num.mod(modulo);
     BigInteger previousNum = num;
