@@ -24,7 +24,7 @@ public class Solution {
 
   /**
    * Checks whether the input integer consists entirely of ascending consecutive positive integers,
-   * discounting any leading '0'.
+   * discounting any leading zeros.
    *
    * @return 'true' if such series is found. Otherwsie 'false'.
    */
@@ -50,7 +50,7 @@ public class Solution {
 
   /**
    * Checks, for the value of current modulo, whether the input integer consists entirely of
-   * ascending consecutive positive integers, discounting any leading '0'.
+   * ascending consecutive positive integers, discounting any leading zeros.
    */
   private static boolean isSeries_of_ascendingConsecutive_positiveIntegers(BigInteger num, BigInteger modulo) {
 
